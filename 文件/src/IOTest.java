@@ -2,13 +2,15 @@ import java.io.*;
 
 public class IOTest {
     public static void main(String[] args) {
-        File file=new File("test.txt");
+        //File file=new File("test.txt");
+
         //Writer writer=new FileWriter(file);
         //IO流是需要关闭的
 
         Writer writer=null;
         try{
-            writer=new FileWriter(file);
+            writer=new FileWriter("test1.txt");
+            //writer=new FileWriter(file);
             writer.write("HelloWorld;");
             //writer.flush(); 如果 finally 里面没有内容，则就添加这个
 
